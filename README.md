@@ -1,0 +1,2 @@
+# casure
+self made dictionary
