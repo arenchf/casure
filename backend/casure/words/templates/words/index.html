@@ -1,0 +1,9 @@
+{% if latest_word_list %}
+<ul>
+  {% for word in latest_word_list %}
+  <li><a href="{% url 'words:detail' word.id %}">{{ word.word }}</a></li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No word are available.</p>
+{% endif %}
